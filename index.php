@@ -50,13 +50,9 @@ and open the template in the editor.
                                     $sql = $pdo->query($sql);
                                     
                                     if ($sql->rowCount() > 0) {
-                                        foreach ($sql->fetchAll() as $key) {
-                                            
-                                            $link = $key['link']; //variavel link
-                                            $descricao = $key['descricao']; //variavel descricao
-                                            
+                                        foreach ($sql->fetchAll() as $key) {                                               
                                             echo "<div class='btn-links'>";
-                                            echo '<strong><a href='.$link.'>'.$descricao.'</a></div>';
+                                            echo '<strong><a href='.$key['link'].'>'.$key['descricao'].'</a></div>';
                                         }
                                     } else {
                                         echo "Não hà links disponiveis";
