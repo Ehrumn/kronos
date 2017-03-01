@@ -41,8 +41,10 @@ and open the template in the editor.
                                 $sqll = "SELECT tipo FROM tb_links_uteis GROUP BY tipo ORDER BY tipo";
                                 $sqll = $pdo->query($sqll);
                                 foreach ($sqll->fetchAll() as $value) {
-
-                                    echo "<br><br><div class='btn-tit'>".$value['tipo'];
+                                    
+                                    $valor = $value['tipo']; //variavel tipo
+                                    
+                                    echo "<br><br><div class='btn-tit'>".$valor;
                                     echo '</div>';
                                     
                                     $tipo = $value['tipo'];
