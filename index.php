@@ -44,21 +44,22 @@ and open the template in the editor.
                                     
                                     $tipo = $value['tipo']; //variavel tipo
                                     
-                                    echo "<br><br><div class='btn-tit'>".$tipo;
-                                    echo '</div>';
-                                    
-                                    $tipo = $value['tipo'];
+                                    echo "<br><br><div class='btn-tit'>".$tipo."</div>";
 
                                     $sql = "SELECT * FROM tb_links_uteis WHERE ativo = 'S' and tipo = '$tipo'";
                                     $sql = $pdo->query($sql);
+                                    
                                     if ($sql->rowCount() > 0) {
                                         foreach ($sql->fetchAll() as $key) {
+                                            
+                                            $link = $key['link']; //variavel link
+                                            $descricao = $key['descricao']; //variavel descricao
+                                            
                                             echo "<div class='btn-links'>";
-                                            echo '<strong><a href=' . $key['link'] . '>' . $key['descricao'].'</a>';
-                                            echo '</div>';
+                                            echo '<strong><a href='.$link.'>'.$descricao.'</a></div>';
                                         }
                                     } else {
-                                        echo "erro";
+                                        echo "Não hà links disponiveis";
                                     }
                                 }
                             } catch (PDOException $e) {
