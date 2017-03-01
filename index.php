@@ -1,3 +1,10 @@
-<?php
-echo"teste";
-?>
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        
+    </body>
+    
+</html>
