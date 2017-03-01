@@ -42,9 +42,9 @@ and open the template in the editor.
                                 $sqll = $pdo->query($sqll);
                                 foreach ($sqll->fetchAll() as $value) {
                                     
-                                    $valor = $value['tipo']; //variavel tipo
+                                    $tipo = $value['tipo']; //variavel tipo
                                     
-                                    echo "<br><br><div class='btn-tit'>".$valor;
+                                    echo "<br><br><div class='btn-tit'>".$tipo;
                                     echo '</div>';
                                     
                                     $tipo = $value['tipo'];
