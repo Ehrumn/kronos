@@ -9,7 +9,7 @@ and open the template in the editor.
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>KRONOS</title>
-        <link href="assets/css/style.css" rel="stylesheet"/>        
+        <link href="assets/css/style.css" rel="stylesheet"/>
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body>
@@ -32,7 +32,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="middle">
-                <div class="mid-left"></div>
+                <div class="mid-left"><br><br><br><br><br><br><br><br><center><h1>Pagina em Desenvolvimento</h1></center></div>
                 <div class="mid-right">
                     <strong><div class="mid-rig-top">Links Úteis:</div>
                         <div class="mid-rig-links">
@@ -65,7 +65,14 @@ and open the template in the editor.
                         </div>
                 </div>
             </div>
-            <footer class="foot"></footer>
+            <footer class="footer">
+               
+                    <div class="footer-left"><center>left</center></div>
+                    <div class="footer-meddle"><center>meddle</center></div>
+                    <div class="footer-right"><center>right</center></div>
+                    <div class="powered">Powered By: Bel. Rafael C. Dresch, Tecg.º Fernando Oliveira</div>
+
+            </footer>
         </div>
         <?php
         // put your code here
