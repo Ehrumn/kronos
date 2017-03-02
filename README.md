@@ -1,2 +1,0 @@
-# kronos
-site institucional kronos

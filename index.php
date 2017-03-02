@@ -21,7 +21,7 @@ and open the template in the editor.
             <div class="cabecalho"> 
                 <!--img class="img-fundo" src="assets/images/icone_1000x1000.png"-->
                 <div class="cab-logo">
-                    <img class="img-logo" src="assets/images/logo_1000x300.png" height="120px">
+                    <img class="img-logo" src="assets/images/logo_1000x258.png" height="120px">
                 </div>
                 <div class="cab-login">
                     <form method="POST">
